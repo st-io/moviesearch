@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>OMDb API search app</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+		
+		<script src="search.js"></script>
+
+		
+	</head>
+
+	<body>
+		<header>
+			<h1>OMDb API search app</h1>
+			<div id="search">	
+				<input id="searchbox" type="search" placeholder="Search movie title...">
+			</div>
+		</header>
+		
+		<div id="userDiv">
+			
+			<div id="notLoggenIn">
+				<fieldset>
+					<legend>Sign In:</legend>
+					<label for="signInUser">Email:</label><br>
+					<input type="email" name="signInUser" id="signInUser"><br><br>
+					<label for="signInPass">Password:</label><br>
+					<input type="password" name="signInPass" id="signInPass"><br><br>
+					<button id="signInBtn">Sign In</button><br>
+				</fieldset>
+			
+			<br>
+			
+				<fieldset>
+					<legend>Register:</legend>
+					<label for="registerUser">Email:</label><br>
+					<input type="email" name="registerUser" id="registerUser"><br><br>
+					<label for="registerPass">Password:</label><br>
+					<input type="password" name="registerPass" id= "registerPass"><br><br>
+					<button id="registerBtn">Register</button><br>
+				</fieldset>
+			</div>
+			<div id="loggedInUser"></div>
+		</div>
+		<div id ="results">
+			<ul id="resultList"></ul>
+			<div id="resultsFooter">
+				<button type="button" id="moreResults">More Results</button>
+			</div>
+		</div>
+		
+	</body>
+</html>

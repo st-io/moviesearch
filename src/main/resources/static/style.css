@@ -1,0 +1,143 @@
+body{
+        text-align: center;
+        font-family: Arial, sans-serif;
+        display: grid;
+        grid-template: auto 1fr auto / auto 1fr auto;
+        box-sizing: border-box;
+}
+
+header{
+        grid-column: 1/4;
+        background: #EACAAE;
+        padding: 1em;
+        color: white;
+        max-height: 40vh;
+        text-align: center;
+        
+        
+}
+        header h1{
+                float: left;
+        }
+
+        #search{
+                clear: right;
+  
+        }
+        
+                #searchbox{
+                        border-radius: 2em;
+                        border: none;
+                        width:40%;
+                        margin: 1rem;
+                        max-height: 2ch;
+                        padding: 1.25em;
+                        font-size: large;
+                }
+
+ul {
+        list-style-type: none;
+}
+
+button{
+        background-color: #4BA687;
+        padding: 1ch;
+        margin: 1ch;
+        border-radius: 2ch;
+        font-weight: bold;
+        font-size: medium;
+        color: white;
+        border: none;
+
+}
+
+button:hover{
+        background-color: #ddf0e9;
+        color: #4BA687;
+}
+
+
+
+#userDiv{
+        color:white;
+        font-weight: bold;
+        background: #97D1BE;
+        grid-column: 1/2;
+        padding: 1rem;
+        text-align: left;
+        min-height: 100vh;
+        
+}
+
+        #userDiv div{
+                position: -webkit-sticky;
+                position: sticky;
+                top: 20vh;
+        }
+
+        #userDiv fieldset{
+
+                border: 1px solid white;
+                width:30%;
+        }
+
+        #userDiv input{
+                border: none;
+                border-radius: 1ch;
+                margin:1ch;
+                font-size: medium;
+        }
+
+#results{
+        grid-column: 2/4;
+        padding: 3%;
+}
+
+
+        #resultsList li{
+                
+        }
+
+
+                        .title{
+                                margin: 5px;
+                        }
+                        .year{
+                                margin:5px;
+                        }
+
+                .movieDiv{
+                        text-align: left;
+                }
+
+                        .head{
+                                display:block;
+                        }
+                        .infoDiv{
+                                
+                                display: block;
+                                padding: 2%;
+                                overflow: auto;
+                        }
+
+                        .details{
+                                display: block;
+                                clear: right;
+                        }
+
+                        .poster{
+                                float: left;
+                                display: block;
+                                padding: 2%;
+                                max-width: 100%;
+                                height: auto;
+                        }
+
+        #resultsFooter{
+                display: grid;
+                place-items: center;
+        }
+        #moreResults{
+                display: none;
+        }
+
