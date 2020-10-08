@@ -13,27 +13,27 @@ header{
         color: white;
         max-height: 40vh;
         text-align: center;
-        
-        
-}
-        header h1{
-                float: left;
-        }
 
-        #search{
-                clear: right;
-  
-        }
-        
-                #searchbox{
-                        border-radius: 2em;
-                        border: none;
-                        width:40%;
-                        margin: 1rem;
-                        max-height: 2ch;
-                        padding: 1.25em;
-                        font-size: large;
-                }
+
+}
+header h1{
+        float: left;
+}
+
+#search{
+        clear: right;
+
+}
+
+#searchbox{
+        border-radius: 2em;
+        border: none;
+        width:40%;
+        margin: 1rem;
+        max-height: 2ch;
+        padding: 1.25em;
+        font-size: large;
+}
 
 ul {
         list-style-type: none;
@@ -66,78 +66,83 @@ button:hover{
         padding: 1rem;
         text-align: left;
         min-height: 100vh;
-        
+
 }
 
-        #userDiv div{
-                position: -webkit-sticky;
-                position: sticky;
-                top: 20vh;
-        }
+#userDiv div{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20vh;
+}
 
-        #userDiv fieldset{
+#userDiv fieldset{
 
-                border: 1px solid white;
-                width:30%;
-        }
+        border: 1px solid white;
+        width:30%;
+}
 
-        #userDiv input{
-                border: none;
-                border-radius: 1ch;
-                margin:1ch;
-                font-size: medium;
-        }
+#userDiv input{
+        border: none;
+        border-radius: 1ch;
+        margin:1ch;
+        font-size: medium;
+}
+
+#userHeader button{
+        display: block;
+}
 
 #results{
         grid-column: 2/4;
         padding: 3%;
 }
 
+#bookHeader{
+        background-color: #97D1BE;
+        color: white;
+        padding: 2%;
+}
 
-        #resultsList li{
-                
-        }
 
+.title{
+        margin: 5px;
+}
+.year{
+        margin:5px;
+}
 
-                        .title{
-                                margin: 5px;
-                        }
-                        .year{
-                                margin:5px;
-                        }
+.movieDiv{
+        text-align: left;
+}
 
-                .movieDiv{
-                        text-align: left;
-                }
+.head{
+        display:block;
+}
+.infoDiv{
 
-                        .head{
-                                display:block;
-                        }
-                        .infoDiv{
-                                
-                                display: block;
-                                padding: 2%;
-                                overflow: auto;
-                        }
+        display: block;
+        padding: 2%;
+        overflow: auto;
+}
 
-                        .details{
-                                display: block;
-                                clear: right;
-                        }
+.details{
+        display: block;
+        clear: right;
+}
 
-                        .poster{
-                                float: left;
-                                display: block;
-                                padding: 2%;
-                                max-width: 100%;
-                                height: auto;
-                        }
+.poster{
+        float: left;
+        display: block;
+        padding: 2%;
+        max-width: 100%;
+        height: auto;
+}
 
-        #resultsFooter{
-                display: grid;
-                place-items: center;
-        }
-        #moreResults{
-                display: none;
-        }
+#resultsFooter{
+        display: grid;
+        place-items: center;
+}
+#moreResults{
+        display: none;
+}
 
